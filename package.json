@@ -1,7 +1,7 @@
 {
-  "name": "belajar-nodejs-11",
+  "name": "belajar-nodejs-12",
   "version": "1.0.0",
-  "description": "Belajar-NodeJS-#11",
+  "description": "Belajar-NodeJS-#12",
   "main": "index.js",
   "scripts": {
     "start": "node index",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/Bachtiar-Firdaus/NodeJS-Youtube-Sourcode-CodeAtHome.git"
   },
   "keywords": [
-    "Belajar-NodeJS-#11"
+    "Belajar-NodeJS-#12"
   ],
   "author": "Bachtiar Firdaus",
   "license": "ISC",

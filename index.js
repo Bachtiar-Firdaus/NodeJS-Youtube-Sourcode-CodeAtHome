@@ -4,7 +4,7 @@ const hello = require("./custom_module/helloWorld"); // <== cara mengimport
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader("Content-Type", "text/plain");
-  res.write(hello); // <== cara pakai
+  res.write(JSON.stringify(hello)); // <== cara pakai
   res.end();
 });
 
