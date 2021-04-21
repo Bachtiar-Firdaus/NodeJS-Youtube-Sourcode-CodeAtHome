@@ -1,0 +1,26 @@
+{
+  "name": "belajar-nodejs-expressjs-15",
+  "version": "1.0.0",
+  "description": "Belajar-NodeJS-ExpressJS-#15",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bachtiar-Firdaus/NodeJS-Youtube-Sourcode-CodeAtHome.git"
+  },
+  "keywords": [
+    "Belajar-NodeJS-ExpressJS-#15"
+  ],
+  "author": "Bachtiar Firdaus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bachtiar-Firdaus/NodeJS-Youtube-Sourcode-CodeAtHome/issues"
+  },
+  "homepage": "https://github.com/Bachtiar-Firdaus/NodeJS-Youtube-Sourcode-CodeAtHome#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
