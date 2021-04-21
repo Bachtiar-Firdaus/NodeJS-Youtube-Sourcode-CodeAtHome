@@ -1,10 +1,17 @@
 const http = require("http");
-const hello = require("./custom_module/helloWorld"); // <== cara mengimport
+const failed = require("./custom_module/failed-routing");
+const succes = require("./custom_module/succes-routing");
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader("Content-Type", "text/plain");
-  res.write(JSON.stringify(hello)); // <== cara pakai
+
+  const url = req.url;
+  if (url === "/ready") {
+    res.write(JSON.stringify(succes));
+  } else {
+    res.write(JSON.stringify(failed));
+  }
   res.end();
 });
 
