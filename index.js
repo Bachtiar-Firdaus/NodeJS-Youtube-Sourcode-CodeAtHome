@@ -18,8 +18,12 @@ const port = 3000;
 //   res.send("request dengan method DELETE");
 // });
 
-app.get("/post/:id", (req, res) => {
-  res.send("artikel-" + req.params.id);
+// app.get("/post/:id", (req, res) => {
+//   res.send("artikel-" + req.params.id);
+// });
+
+app.get("/page-*", (req, res) => {
+  res.send("route: " + req.path);
 });
 
 app.listen(port, () =>
