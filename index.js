@@ -2,6 +2,25 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+/** 
+ini untuk versi express dibawah dari versi 4.16
+
+const bodyParser = require("body-parser");
+// penggunaan middleware body parser
+// parse x-www-form-url-encode
+app.use(bodyParser.urlencoded({ extended: true }))
+// parse JSON
+app.use(bodyParser.json())
+
+*/
+
+// parse x-www-form-url-encode
+// app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }));
+// parse JSON
+// app.use(bodyParser.json())
+app.use(express.json());
+
 const routers = require("./custom_module/router");
 
 const log = (req, res, next) => {

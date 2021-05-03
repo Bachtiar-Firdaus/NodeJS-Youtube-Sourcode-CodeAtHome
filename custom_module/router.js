@@ -22,11 +22,12 @@ routers.get("/post/:id", (req, res) => {
 });
 
 routers.get("/page-*", (req, res) => {
-  res.send("route: " + req.path);
+  res.send(req.path);
 });
 
-routers.get("/about", (req, res) => {
-  dispatchEvent;
+routers.get("/login", (req, res) => {
+  const { username, password } = req.body;
+  res.send(`Anda login dengan username ${username} dan password ${password}`);
 });
 
 module.exports = routers;
