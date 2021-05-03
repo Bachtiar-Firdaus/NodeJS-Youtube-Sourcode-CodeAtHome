@@ -25,4 +25,8 @@ routers.get("/page-*", (req, res) => {
   res.send("route: " + req.path);
 });
 
+routers.get("/about", (req, res) => {
+  res.send("data about");
+});
+
 module.exports = routers;
