@@ -26,7 +26,7 @@ routers.get("/page-*", (req, res) => {
 });
 
 routers.get("/about", (req, res) => {
-  res.send("data about");
+  dispatchEvent;
 });
 
 module.exports = routers;

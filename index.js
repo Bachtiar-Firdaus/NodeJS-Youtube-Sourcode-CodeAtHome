@@ -35,6 +35,23 @@ const notFound = (req, res, next) => {
 };
 app.use(notFound);
 
+//Menangani Error
+//versi 1
+// const errorHandling = (err, req, res, next) => {
+//   console.error(err.stack);
+//   res.status(500).send("Terjadi kesalahan");
+// };
+// app.use(errorHandling);
+
+//versi 2
+const errorHandling = (err, req, res, next) => {
+  res.json({
+    status: "error",
+    message: "terjadi kesalahan pada server",
+  });
+};
+app.use(errorHandling);
+
 app.listen(port, () =>
   console.log(`Server running at http://localhost:${port}`)
 );
